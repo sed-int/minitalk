@@ -6,7 +6,7 @@
 /*   By: hcho2 <hcho2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 11:30:23 by hcho2             #+#    #+#             */
-/*   Updated: 2023/07/19 15:14:36 by hcho2            ###   ########.fr       */
+/*   Updated: 2023/07/19 15:16:00 by hcho2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 
 # include <unistd.h>
 # include <signal.h>
-# include "../libft/libft.h"
+# include "libft/libft.h"
 
 #endif
