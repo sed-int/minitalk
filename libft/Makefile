@@ -6,7 +6,7 @@
 #    By: hcho2 <hcho2@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/13 15:29:25 by hcho2             #+#    #+#              #
-#    Updated: 2023/07/18 12:44:52 by hcho2            ###   ########.fr        #
+#    Updated: 2023/07/19 14:51:05 by hcho2            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,10 +46,10 @@ bonus: $(OBJECTS) $(BOBJECTS)
 	@$(CC) -c $(CFLAGS) $?
 
 clean:
-	rm -f $(OBJECTS) $(BOBJECTS) all bonus
+	@rm -f $(OBJECTS) $(BOBJECTS) all bonus
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 

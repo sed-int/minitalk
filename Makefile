@@ -6,7 +6,7 @@
 #    By: hcho2 <hcho2@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/19 13:40:03 by hcho2             #+#    #+#              #
-#    Updated: 2023/07/19 14:01:10 by hcho2            ###   ########.fr        #
+#    Updated: 2023/07/19 14:50:53 by hcho2            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,12 +57,14 @@ $(LIBFT):
 		@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
+		@cd libft; make clean
 		@$(RM) $(OBJ)
 		@echo $(GREEN)"\n============================================================\n" $(EOC)
 		@echo $(YELLOW)"                          CLEAN                             " $(EOC)
 		@echo $(GREEN)"\n============================================================\n" $(EOC)
 
 fclean:		clean
+		@cd libft; make fclean
 		@$(RM) $(SERVER) $(CLIENT)
 		@echo $(GREEN)"\n============================================================\n" $(EOC)
 		@echo $(YELLOW)"                          FCLEAN                            " $(EOC)
