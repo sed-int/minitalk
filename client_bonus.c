@@ -6,7 +6,7 @@
 /*   By: hcho2 <hcho2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 11:30:49 by hcho2             #+#    #+#             */
-/*   Updated: 2023/07/19 20:29:33 by hcho2            ###   ########.fr       */
+/*   Updated: 2023/07/20 13:37:41 by hcho2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ void	ft_send_msg(pid_t pid, char *msg)
 		ft_send_bits(pid, msg[i]);
 		usleep(50);
 	}
+	ft_send_bits(pid, '\n');
 	ft_send_bits(pid, '\0');
 }
 
